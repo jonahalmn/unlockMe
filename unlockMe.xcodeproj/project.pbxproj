@@ -13,6 +13,14 @@
 		F5BA20C31FC0966200193204 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F5BA20C21FC0966200193204 /* Assets.xcassets */; };
 		F5BA20C61FC0966200193204 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F5BA20C41FC0966200193204 /* LaunchScreen.storyboard */; };
 		F5BA20D11FC0966200193204 /* unlockMeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA20D01FC0966200193204 /* unlockMeTests.swift */; };
+		F5BA20E01FC096D700193204 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA20DF1FC096D700193204 /* Game.swift */; };
+		F5BA20E21FC096FD00193204 /* Combinaison.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA20E11FC096FD00193204 /* Combinaison.swift */; };
+		F5BA20E61FC0972300193204 /* HighscorePersister.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA20E51FC0972300193204 /* HighscorePersister.swift */; };
+		F5BA20E81FC0973300193204 /* SoundPlayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA20E71FC0973300193204 /* SoundPlayer.swift */; };
+		F5BA20EB1FC0BB5700193204 /* valid.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F5BA20EA1FC0BB4000193204 /* valid.mp3 */; };
+		F5BA20ED1FC0BC4E00193204 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA20EC1FC0BC4E00193204 /* HomeViewController.swift */; };
+		F5BA20F01FC0D31600193204 /* TimeChallengeGame.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA20EF1FC0D31600193204 /* TimeChallengeGame.swift */; };
+		F5BA20F21FC0E1C400193204 /* Modes.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5BA20F11FC0E1C400193204 /* Modes.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +44,14 @@
 		F5BA20CC1FC0966200193204 /* unlockMeTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = unlockMeTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5BA20D01FC0966200193204 /* unlockMeTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = unlockMeTests.swift; sourceTree = "<group>"; };
 		F5BA20D21FC0966200193204 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F5BA20DF1FC096D700193204 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
+		F5BA20E11FC096FD00193204 /* Combinaison.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Combinaison.swift; sourceTree = "<group>"; };
+		F5BA20E51FC0972300193204 /* HighscorePersister.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HighscorePersister.swift; sourceTree = "<group>"; };
+		F5BA20E71FC0973300193204 /* SoundPlayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SoundPlayer.swift; sourceTree = "<group>"; };
+		F5BA20EA1FC0BB4000193204 /* valid.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = valid.mp3; sourceTree = "<group>"; };
+		F5BA20EC1FC0BC4E00193204 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		F5BA20EF1FC0D31600193204 /* TimeChallengeGame.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimeChallengeGame.swift; sourceTree = "<group>"; };
+		F5BA20F11FC0E1C400193204 /* Modes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Modes.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,11 +93,12 @@
 		F5BA20BA1FC0966200193204 /* unlockMe */ = {
 			isa = PBXGroup;
 			children = (
-				F5BA20BB1FC0966200193204 /* AppDelegate.swift */,
-				F5BA20BD1FC0966200193204 /* ViewController.swift */,
-				F5BA20BF1FC0966200193204 /* Main.storyboard */,
+				F5BA20E91FC0BAFA00193204 /* Sounds */,
+				F5BA20DE1FC096CC00193204 /* Models */,
+				F5BA20DD1FC096A700193204 /* SupportingFiles */,
+				F5BA20DC1FC0969400193204 /* View */,
+				F5BA20DB1FC0967B00193204 /* Controller */,
 				F5BA20C21FC0966200193204 /* Assets.xcassets */,
-				F5BA20C41FC0966200193204 /* LaunchScreen.storyboard */,
 				F5BA20C71FC0966200193204 /* Info.plist */,
 			);
 			path = unlockMe;
@@ -94,6 +111,53 @@
 				F5BA20D21FC0966200193204 /* Info.plist */,
 			);
 			path = unlockMeTests;
+			sourceTree = "<group>";
+		};
+		F5BA20DB1FC0967B00193204 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				F5BA20EC1FC0BC4E00193204 /* HomeViewController.swift */,
+				F5BA20BD1FC0966200193204 /* ViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		F5BA20DC1FC0969400193204 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				F5BA20C41FC0966200193204 /* LaunchScreen.storyboard */,
+				F5BA20BF1FC0966200193204 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		F5BA20DD1FC096A700193204 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F5BA20BB1FC0966200193204 /* AppDelegate.swift */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		F5BA20DE1FC096CC00193204 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				F5BA20E51FC0972300193204 /* HighscorePersister.swift */,
+				F5BA20E71FC0973300193204 /* SoundPlayer.swift */,
+				F5BA20F11FC0E1C400193204 /* Modes.swift */,
+				F5BA20DF1FC096D700193204 /* Game.swift */,
+				F5BA20EF1FC0D31600193204 /* TimeChallengeGame.swift */,
+				F5BA20E11FC096FD00193204 /* Combinaison.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		F5BA20E91FC0BAFA00193204 /* Sounds */ = {
+			isa = PBXGroup;
+			children = (
+				F5BA20EA1FC0BB4000193204 /* valid.mp3 */,
+			);
+			path = Sounds;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +243,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F5BA20EB1FC0BB5700193204 /* valid.mp3 in Resources */,
 				F5BA20C61FC0966200193204 /* LaunchScreen.storyboard in Resources */,
 				F5BA20C31FC0966200193204 /* Assets.xcassets in Resources */,
 				F5BA20C11FC0966200193204 /* Main.storyboard in Resources */,
@@ -200,6 +265,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F5BA20BE1FC0966200193204 /* ViewController.swift in Sources */,
+				F5BA20E61FC0972300193204 /* HighscorePersister.swift in Sources */,
+				F5BA20E01FC096D700193204 /* Game.swift in Sources */,
+				F5BA20E21FC096FD00193204 /* Combinaison.swift in Sources */,
+				F5BA20E81FC0973300193204 /* SoundPlayer.swift in Sources */,
+				F5BA20ED1FC0BC4E00193204 /* HomeViewController.swift in Sources */,
+				F5BA20F21FC0E1C400193204 /* Modes.swift in Sources */,
+				F5BA20F01FC0D31600193204 /* TimeChallengeGame.swift in Sources */,
 				F5BA20BC1FC0966200193204 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
